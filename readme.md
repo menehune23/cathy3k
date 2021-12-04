@@ -1,4 +1,4 @@
-# Cathy3K 
+# Cathy3K
 
 An assembly optimized bootloader in 3K for Arduboy based on reversed Caterina
 bootloader.
@@ -12,7 +12,7 @@ bootloader.
 * A USB icon is displayed in bootloader mode when there is no serial flash chip
   or has not been initialized.
 * Identifies itself as serial programmer 'ARDUBOY'
-* Added command to write to OLED display 
+* Added command to write to OLED display
 * Added command to read button states
 * Added command to control LEDs and button input
 * Added command to read and write to serial flash memory
@@ -45,11 +45,10 @@ need to flash the fuses BOOTSZ1 = 0 BOOTSZ0 = 1 (2K-byte/1K-word).
 Recommended fuse settings: LFUSE:0xFF EFUSE:0xCB HFUSE:0xD2
 
 ### building bootloader
-To (re)build the bootloaders. Install WinAVR-20100110 in standard location and 
-run the make3k-all.bat batch file
+To (re)build the bootloaders. Install the Arduino IDE and run the `make3k-all.sh` script.
 
 ### bootloader filenames
-The batch file creates many bootloaders for Arduboy and many homemade Arduboy 
+The batch file creates many bootloaders for Arduboy and many homemade Arduboy
 configurations, keywords in the filename help indentify a specific target.
 Without keywords the bootloader is for Arduboy/Leonardo/ProMicro standard wiring
 with SSD1306/SSD1309 display and Rx as flash chip select.
